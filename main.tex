@@ -1,0 +1,56 @@
+\documentclass{article} %tipo di documento
+
+\input{variabili}
+\input{pacchetti}
+
+
+\renewcommand{\contentsname}{Indice}%imposto il nome dell'indice
+
+
+%-------------------INIZIO DOCUMENTO--------------
+\begin{document}
+
+\include{titolo}
+
+\newpage
+
+\include{header}
+
+\tableofcontents
+
+%-----------tabella revisioni-----------%
+
+\begin{table}[!b]
+    \caption {Revisioni} \label{tab:title} 
+    \begin{center}
+        \begin{tabular}{ c c c c c c } 
+         \hline
+         Ver. & Data & Elaborato da & Verificato da & Approvato da & Descrizione \\ 
+         1.0 & 12/03/2024 & Valerio  \\ 
+         1.1 & \\
+         \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+%---------------------------------------%
+
+\newpage
+
+
+\section{Sezione 1}
+
+\paragraph{Paragrafo 1}
+
+\paragraph{Paragrafo 2} 
+\begin{itemize}
+    \item elemento uno
+    \item elemento due 
+    \item elemento tre
+\end{itemize}
+
+
+
+\section{Sezione 2}
+\subsection{Sottosezione 1}
+
+\end{document}
